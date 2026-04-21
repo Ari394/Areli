@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | ARELI Jewelry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+     <link rel="shortcut icon" href="Areli.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+   
+</head>
+<body class="fondo-marfil">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand marca-areli" href="index.html">ARELI</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto nav-links">
+                    <li class="nav-item"><a class="nav-link mx-2" href="index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="servicios.html">SERVICIOS</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="colecciones.html">COLECCIONES</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="sobre-mi.html">SOBRE NOSOTROS</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="cuidado.html">CUIDADO</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 bg-dark text-white text-center position-relative" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('servicios-bg.jpg') center/cover;">
+        <div class="container py-3 py-md-5">
+            <h1 class="fuente-joya display-5 display-md-3">Contáctanos</h1>
+            <p class="lead text-gold-light espaciado-amplio">Estamos aquí para hacer realidad tus sueños</p>
+        </div>
+    </header>
+
+    <main class="container py-5 mt-4">
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="contact-info-card p-4 mb-4 bg-white shadow-sm border-0">
+                    <h4 class="fuente-joya mb-4">Información de Enlace</h4>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-box-luxury me-3"><i class="bi bi-geo-alt"></i></div>
+                        <div>
+                            <p class="mb-0 small text-muted">Ubicación</p>
+                            <p class="mb-0 fw-medium">San José, Costa Rica</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-box-luxury me-3"><i class="bi bi-envelope"></i></div>
+                        <div>
+                            <p class="mb-0 small text-muted">Email</p>
+                            <p class="mb-0 fw-medium">info@arelijewelry.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-box-luxury me-3"><i class="bi bi-telephone"></i></div>
+                        <div>
+                            <p class="mb-0 small text-muted">Teléfono</p>
+                            <p class="mb-0 fw-medium">+506 8888 8888</p>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <h6 class="espaciado-leve mb-3 small fw-bold">HORARIO DE ATENCIÓN</h6>
+                    <p class="small text-muted mb-1">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                    <p class="small text-muted">Sábados: 10:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="bg-white p-4 p-md-5 shadow-sm border-0">
+                    <h2 class="fuente-joya mb-4">Envíanos un mensaje</h2>
+
+                    <form id="contactForm" class="needs-validation" novalidate action="https://formsubmit.co/eliiti0306@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="gracias.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Nuevo contacto desde ARELI Jewelry">
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label small text-uppercase espaciado-leve">Nombre Completo</label>
+                                <input type="text" name="name" class="form-control rounded-0 border-light-custom" id="nombre" required>
+                                <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label small text-uppercase espaciado-leve">Correo Electrónico</label>
+                                <input type="email" name="email" class="form-control rounded-0 border-light-custom" id="email" required>
+                                <div class="invalid-feedback">Ingresa un correo válido.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label small text-uppercase espaciado-leve">Asunto</label>
+                                <select class="form-select rounded-0 border-light-custom" name="subject" id="asunto" required>
+                                    <option value="" selected disabled>Selecciona una opción...</option>
+                                    <option value="consulta">Consulta General</option>
+                                    <option value="diseno">Diseño Personalizado</option>
+                                    <option value="reparacion">Reparación/Mantenimiento</option>
+                                    <option value="cita">Agendar Cita</option>
+                                </select>
+                                <div class="invalid-feedback">Selecciona un asunto.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label small text-uppercase espaciado-leve">Escribe tu mensaje</label>
+                                <textarea class="form-control rounded-0 border-light-custom" name="message" id="mensaje" rows="5" placeholder="Cuéntanos más sobre lo que buscas..." required></textarea>
+                                <div class="invalid-feedback">Por favor, escribe tu consulta.</div>
+                            </div>
+
+                            <div class="col-12 mt-4 text-end">
+                                <button type="submit" class="btn btn-ver-coleccion px-5 py-3">ENVIAR MENSAJE</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-joyeria py-5 mt-5">
+        <div class="container pt-5">
+            <div class="row g-5 text-center text-md-start">
+                <div class="col-md-3">
+                    <h3 class="fuente-joya marca-areli mb-3 text-white">ARELI</h3>
+                    <p class="small text-white-50">Joyería artesanal de alta calidad. Cada pieza cuenta una historia única.</p>
+                </div>
+                <div class="col-md-3 ms-md-auto">
+                    <h6 class="text-uppercase espaciado-amplio mb-4 font-weight-semibold text-white">NAVEGACIÓN</h6>
+                    <ul class="list-unstyled pie-enlaces small">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li><a href="servicios.html" class="text-white-50 text-decoration-none">Servicios</a></li>
+                        <li><a href="colecciones.html" class="text-white-50 text-decoration-none">Colecciones</a></li>
+                        <li><a href="sobre-mi.html" class="text-white-50 text-decoration-none">Sobre Nosotros</a></li>
+                        <li><a href="cuidado.html" class="text-white-50 text-decoration-none">Cuidado de Joyas</a></li>
+                        <li><a href="contacto.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase espaciado-amplio mb-4 font-weight-semibold text-white">CONTACTO</h6>
+                    <ul class="list-unstyled small text-white-50">
+                        <li><i class="bi bi-telephone mx-2"></i> +506 8888 8888</li>
+                        <li><i class="bi bi-envelope mx-2"></i> info@arelijewelry.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase espaciado-amplio mb-4 font-weight-semibold text-white">SÍGUENOS</h6>
+                    <div class="fs-5">
+                        <a href="#" class="mx-2 text-white-50"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="mx-2 text-white-50"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    } else {
+                        alert('Enviando tu mensaje... Por favor, espera.');
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+:root {
+    --gold: #c5a059;
+    --brown-dark: #3d2b1f;
+    --brown-medium: #5c4b2c;
+    --light-cream: #fcf9f5;
+    --dark: #1a1a1a;
+}
+ 
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+ 
+.fuente-joya {
+    font-family: "Times New Roman", serif;
+}
+ 
+
+.texto-chocolate { color: var(--brown-dark); }
+.texto-caramelo { color: #8c7c66; }
+.texto-dorado-oscuro { color: var(--gold); }
+.texto-dorado { color: var(--gold); font-weight: 600; }
+ 
+.fondo-marfil {
+    background-color: var(--light-cream);
+}
+ 
+.fondo-cobre {
+    background-color: var(--brown-dark) !important;
+}
+ 
+.espaciado-amplio { letter-spacing: 2px; }
+.espaciado-leve { letter-spacing: 1px; }
+
+
+
+ 
+.nav-links .nav-link {
+    color: #555 !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-bottom: 5px;
+}
+.nav-links .nav-link:hover,
+.nav-links .nav-link:focus { color: var(--brown-dark) !important; }
+.nav-links .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--brown-dark);
+    transition: width 0.3s ease;
+}
+.nav-links .nav-link:hover::after { width: 100%; }
+.nav-links .nav-link.active { color: var(--brown-dark) !important; font-weight: 600; }
+ 
+
+.btn-ver-coleccion {
+    background-color: var(--brown-dark);
+    color: white;
+    border: none;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+ 
+.btn-ver-coleccion:hover {
+    background-color: #5a402e;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+ 
+
+.banner-escaparate {
+    max-height: 600px;
+    object-fit: cover;
+    filter: brightness(0.95);
+    transition: filter 0.5s ease;
+}
+ 
+.banner-escaparate:hover {
+    filter: brightness(1);
+}
+
+
+.card {
+    transition: all 0.3s ease;
+}
+ 
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+ 
+.pieza-destacada {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.pieza-destacada img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0;
+    transition: transform 0.5s ease;
+}
+ 
+.pieza-destacada:hover img {
+    transform: scale(1.05);
+}
+ 
+.precio-joya {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+ 
+
+.hover-escaparate {
+    transition: all 0.4s ease;
+    border: 1px solid transparent !important;
+}
+ 
+.hover-escaparate:hover {
+    transform: translateY(-5px);
+    border-color: #f9f7f2 !important;
+    background-color: #fcf9f5 !important;
+}
+ 
+
+.footer-joyeria {
+    background-color: var(--brown-dark);
+    color: #fff;
+}
+ 
+.footer-joyeria .marca-areli {
+    color: #fff !important;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+ 
+.footer-enlaces a:hover {
+    color: var(--gold) !important;
+}
+ 
+
+.borde-orfebre {
+    border: 1px solid #d7ccc8;
+    transition: all 0.3s ease;
+}
+ 
+.borde-orfebre:hover {
+    border-color: var(--brown-dark);
+    transform: translateY(-5px);
+}
+ 
+.separador-orfebre {
+    width: 60px;
+    height: 3px;
+    background-color: var(--brown-dark);
+}
+ 
+ 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: 50%;
+}
+ 
+ 
+.mapa-colecciones img {
+    max-width: 100%;
+    height: auto;
+}
+ 
+ 
+.menu-movil {
+    display: none;
+}
+ 
+.texto-movil {
+    display: none;
+}
+ 
+@media (min-width: 1200px) {
+    .mapa-colecciones {
+        display: block;
+    }
+ 
+    .menu-movil {
+        display: none;
+    }
+ 
+    .texto-escritorio {
+        display: block;
+    }
+ 
+    .texto-movil {
+        display: none;
+    }
+}
+ 
+@media (max-width: 1199px) {
+    .mapa-colecciones {
+        display: none;
+    }
+ 
+    .menu-movil {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+ 
+    .texto-escritorio {
+        display: none;
+    }
+ 
+    .texto-movil {
+        display: block;
+    }
+ 
+    
+    .menu-movil a {
+    background: #d4a373;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease; 
+}
+ 
+.menu-movil a:hover {
+    background: #b8875a; 
+}
+
+}
+
+.contenedor-video {
+    overflow: hidden;
+}
+
+.video-ajustado {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 65% center; 
+    display: block;
+}
+
+.contenedor-video:hover .video-ajustado {
+    transform: scale(1.03);
+    transition: transform 0.5s ease;
+}
